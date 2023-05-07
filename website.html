@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>It's Sarah's Birthday :D</title>
+<link rel="stylesheet" href="website.css">
+	<style>
+		img {
+			position: relative;
+			z-index: 2;
+			width: 400px;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: 100px;
+		}
+		h1 {
+			margin-top: 50px;
+			text-align: center;
+			color: #C1E1C1;
+			font-family: cursive;
+			font-size: 48px;
+		}
+		.heythere {
+			text-align: right;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-size: 24px;
+			margin-right: 100px;
+		}
+
+		.letter {
+			position: absolute;
+			top: 150px;
+  			left: 00px;
+			text-align: left;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-size: 24px;
+			margin-left: 100px;
+			margin-right:600px;
+		}
+		.confetti {
+			position: fixed;
+			top: -10px;
+			left: 10%;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			animation: confetti 4s linear infinite;
+			z-index: -2;
+		}
+
+		@keyframes confetti {
+			0% {
+				transform: translate(0, 0);
+			}
+			100% {
+				transform: translate(0, 100vh);
+			}
+		}
+		
+		.rectangle {
+			position: absolute;
+  			top: 150px;
+  			left: 50%;
+  			transform: translate(-50%, 0%);
+  			width: 1200px;
+  			height: 3600px;
+  			background-color: #C1E1C1;
+  			z-index: -1;
+		}
+	</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Happy Birthday Sarah!</h1>
+	<img src="https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg" alt="My Image">
+	<div class="rectangle"></div>
+	<p class="heythere">hey there😏</p>
+
+	<video width="400" height="auto" controls>
+	<source src="C:\Users\jessi\Downloads\VID-20220429-WA0024.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+	
+	<video class="second-video" width="400" height="auto" controls>
+  	<source src="C:\Users\jessi\Downloads\Snapchat-524067246.mp4" type="video/mp4">
+  	Your browser does not support the video tag.
+	</video>
+	<p class="letter">Dear Sarah,<br><br>
+Happy Birthday!!!<br> :D XD OWO <3<br><br>
+i hope you have the best birthday ever!!<br><br>
+i miss u alot and i hope that school is going well for u in canada/nevada/arizona<br><br>
+we dont talk as much as we used to because school is getting busy but i think that every time we meet and hangout we are all pretty chill and get along well, which i really like. Even tho you, me, n sachi dont meet that often, we still get along because we understand that we all got alot going on in our lives. thanks alot for always being there for me and being such a kind and supportive freind. i hope we stay friends forever. <br><br>
+i hope you have the best birthday and the best year and the best life ever <br><br>
+soon u will be an adult T-T ur growing so fast<br><br>
+i remember holding you when you were fresh outta the womb and look at u now 🤩<br><br>
+BIG BRAIN BIG BIG GIRL<br><br>
+i hope you like this cringey ass website i made anndddd i hope you laugh even if its just one of those exhale from nose things<br><br>
+i decided to add some videos and pics for<br> ✨mEMOrIeS and aStHetHicK✨ <br><br> 
+happy birthday again and i love u alot<br><br>
+love <3 jessica<br><br><br><br><br>
+btw i actually have no experience in this and just used chat gpt so this the best i got<br><br>
+also chat gpt says "Happy Birthday to Sarah!"
+ </p>
+	<img src="C:\Users\jessi\OneDrive\Pictures\IMG-20200301-WA0003.jpg" alt="Image 6">
+	<img src="C:\Users\jessi\OneDrive\Pictures\IMG-20201031-WA0019.jpg" alt="Image 5">
+
+	<img src="C:\Users\jessi\OneDrive\Pictures\IMG-20220325-WA0003.jpg" alt="Image 1">
+	<img src="C:\Users\jessi\OneDrive\Pictures\20210904_171216.jpg" alt="Image 2">
+	<img src="C:\Users\jessi\OneDrive\Pictures\IMG-20210414-WA0003.jpg" alt="Image 3">
+	<img src="C:\Users\jessi\OneDrive\Pictures\IMG-20201117-WA0005.jpg" alt="Image 4">
+	
+
+
+	<script src="script.js"></script>
+	
+	<script>
+		// Create confetti elements
+		for (let i = 0; i < 100; i++) {
+			const confetti = document.createElement("div");
+			confetti.classList.add("confetti");
+			confetti.style.left = Math.random() * 100 + "%";
+			confetti.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+			confetti.style.animationDelay = Math.random() * 4 + "s";
+			document.body.appendChild(confetti);
+		}
+	</script>
+</body>
+</html>
